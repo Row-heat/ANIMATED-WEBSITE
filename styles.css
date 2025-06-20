@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+HTML, body {
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+   
+}
+
+#nav{
+    padding: 2vw 2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-2{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+
+}
+
+.nav-2 h4{
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000;
+    font-size: 18px;
+    position : relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+.nav-2 h4::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+     left: 0;
+     bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+
+
+}
+
+.nav-2 h4:hover::after{
+    bottom: 0;
+   border-radius: 0;
+}
+
+.nav-2 h4 a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    z-index: 9;
+}
+
+.nav-2 h4 a:hover{
+    color: #ffffff;
+}
+
+#center{
+    height: 65vh;
+    width: 100%;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid 06e42f;
+    padding-bottom: 2.5vw;
+    border-bottom: #000 solid 1px;
+     
+}
+
+#left h3{
+    width: 55vh;
+    font-size: 1.6vw;
+    line-height: 2vw;
+    
+
+}
+
+#center h1{
+    font-size: 8vw;
+    line-height: 20vh;
+    font-weight: 700;
+    text-align: right;
+}
+
+#page1 video{
+    position: relative;
+    width: 100%;
+    border-radius: 40px;
+    margin: 4vw;
+    padding-right: 9.2vw;
+    box-sizing: border-box;
+    
+}
+
+#hero-shape{
+    position: absolute;
+    height:30vw;
+    width: 46vw;
+    
+    right: 0;
+    top: 71vh;
+    
+
+
+}
+
+#hero-1{
+    height: 100%;
+    width: 100%;
+    background-color: #FE360D;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+    filter : blur(20px);
+}
+#hero-2{
+    height: 30vw;
+    width: 30vw;
+    background-color: #FE360D;
+    border-radius: 50%;
+    position: absolute;
+    filter : blur(20px);
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#hero-3{
+    height: 30vw;
+    width: 30vw;
+    background-color: #FE360D;
+    border-radius: 50%;
+    position: absolute;
+    filter : blur(20px);
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime1{
+    from{
+        transform:translate(-10%, 10%)
+    }
+    to{
+        transform:translate(10%, -10%)
+    }
+
+}
+
+@keyframes anime2{
+    from{
+        transform:translate(20%, -3%)
+    }
+    to{
+        transform:translate(-10%, 30%)
+    }
+
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 6vw 0;
+    background-color: #EFEAE3;
+}
+
+#moving-text h1{
+    font-size: 9vw;
+    display: inline-block;
+    
+     overflow-x:auto ;
+    
+}
+
+#gola{
+    height: 80px;
+    width: 80px;
+    background-color: orangered;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2.8vw 2.7vw;
+}
+
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation: move 20s linear infinite;
+}
+
+#moving-text{
+    white-space: nowrap;
+    
+}
+
+#moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#page2-bottom{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw 2vw;
+
+}
+
+#page2-bottom h1{
+    font-size: 4vw;
+    width: 55%;
+}
+
+#bottompart-2{
+    width: 25%;
+    
+}
+
+#bottompart-2 img{
+    width: 100%;
+    
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#bottompart-2 p{
+    font-weight: 300;
+    margin: 2vw 0;
+    font-size: 1.3vw;
+
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 4vw 0;
+}
+
+.elem{
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+   
+
+}
+
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.4s;
+    
+    
+}
+
+.elem:hover .overlay{
+    top: 0;
+    transition: all ease 0.4s;
+}
+
+#fixed-image{
+    height: 30vw;
+    width: 20vw;
+    
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 30%;
+    display: none; /* Keep this, but ensure JS sets display to 'none' when needed */
+}
+
+#page4{
+    height: 50vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 8vw 8vw;
+    
+}
+
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      padding: 0 2vw;
+      
+      
+      border-left: 1px solid #000;
+    }
+
+    
+    .swiper-slide {
+      width: 30%;
+    }
+
+    
+
+#page5{
+    height: 100vh;
+    width: 100%;
+
+}
+
+#main {
+  
+}
+
+#footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+}
+
+#footer h1{
+    font-size: 18.5vw;
+    padding: 2vw;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #left h3{
+        width: 100%;
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    #center {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding-bottom: 5vw;
+        border-bottom: #000 solid 1px;
+    }
+
+    #center h1{
+        font-size: 10vw;
+        line-height: 12vw;
+        text-align: left;
+        margin-top: 4vw;
+    }
+
+    #hero-shape{
+        height: 50vw;
+        width: 70vw;
+        top: 60vh;
+        right: 0;
+    }
+
+    #hero-1, #hero-2, #hero-3{
+        height: 50vw;
+        width: 50vw;
+    }
+
+    #page1 video{
+        margin: 4vw 0;
+        border-radius: 20px;
+    }
+
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2vw;
+        padding: 4vw 2vw;
+    }
+
+    .nav-2 {
+        gap: 2vw;
+    }
+
+    .nav-2 h4 {
+        font-size: 4vw;
+        padding: 8px 16px;
+    }
+
+    #moving-text h1{
+        font-size: 12vw;
+    }
+
+    #gola {
+        height: 40px;
+        width: 40px;
+        margin: 2vw 2vw;
+    }
+
+    #page2-bottom {
+        flex-direction: column;
+        height: auto;
+        gap: 4vw;
+        padding: 4vw 2vw;
+    }
+
+    #page2-bottom h1{
+        font-size: 6vw;
+        width: 100%;
+        margin-bottom: 2vw;
+    }
+
+    #bottompart-2 {
+        width: 100%;
+    }
+
+    #bottompart-2 img {
+        border-radius: 12px;
+    }
+
+    #bottompart-2 p {
+        font-size: 3vw;
+        margin: 3vw 0;
+    }
+
+    .elem {
+        height: 80px;
+        padding: 0 4vw;
+    }
+
+    .elem h2 {
+        font-size: 6vw;
+    }
+
+    #fixed-image {
+        height: 50vw;
+        width: 80vw;
+        left: 10%;
+        top: 20%;
+    }
+
+    #page4 {
+        padding: 8vw 2vw;
+        height: auto;
+    }
+
+    .swiper-slide {
+        font-size: 4vw;
+        padding: 0 2vw;
+    }
+
+    #footer h1 {
+        font-size: 12vw;
+        padding: 4vw 0;
+    }
+}
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #020000;
+    z-index: 999;
+    transition: all ease 1s;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h1{
+    font-size: 7vw;
+    color: transparent;
+    background: linear-gradient(to right, orange, orangered);
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+
+#loader h1:nth-child(2){
+    animation-delay: 2s;
+    
+}
+#loader h1:nth-child(3){
+    animation-delay: 3s;
+    
+}
+
+@keyframes load{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
